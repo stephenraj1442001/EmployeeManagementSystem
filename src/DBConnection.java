@@ -28,10 +28,10 @@ public class DBConnection extends HttpServlet {
 			}
 			else {
 				out.println("<center>");
-               out.println("<h1 style=\"font-family:Comic Sans MS;\">You Entered Wrong UserId Or Password</h1>");
-               out.println("<center>");
 				RequestDispatcher dis = request.getRequestDispatcher("home.html");
-			    dis.include(request, response);
+			        dis.include(request, response);
+				out.println("<h1 style=\"font-family:Comic Sans MS;\">You Entered Wrong UserId Or Password</h1>");
+				 out.println("</center>");
 			}
 		} 
 	}
